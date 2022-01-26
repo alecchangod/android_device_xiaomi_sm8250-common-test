@@ -13,7 +13,6 @@ camera.disable_zsl_mode=true
 persist.vendor.camera.privapp.list=com.android.camera
 log.tag.CHIUSECASE=ERROR
 
-
 # Charger
 ro.charger.disable_init_blank=true
 
@@ -72,6 +71,10 @@ ro.miui.notch=1
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+
+# ParanoidDoze
+ro.sensor.pickup=xiaomi.sensor.pickup
+ro.sensor.proximity=true
 
 # Perf
 ro.vendor.qti.core_ctl_max_cpu=4

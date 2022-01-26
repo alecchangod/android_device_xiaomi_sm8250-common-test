@@ -405,8 +405,13 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/Car
 PRODUCT_PACKAGES += \
     SettingsLibOverlayCommon \
     CarrierConfigOverlayCommon
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
 
 # Perf
 PRODUCT_PACKAGES += \
