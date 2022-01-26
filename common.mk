@@ -427,8 +427,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
-    android.hardware.power.stats@1.0-service.mock \
-    vendor.qti.hardware.perf@1.0.vendor
+    android.hardware.power.stats@1.0-service.mock
 
 ifeq (kona,$(TARGET_BOARD_PLATFORM))
 PRODUCT_COPY_FILES += \
@@ -454,6 +453,9 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
+
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 
 # RIL
 PRODUCT_PACKAGES += \
