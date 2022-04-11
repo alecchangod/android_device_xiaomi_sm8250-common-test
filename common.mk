@@ -136,6 +136,9 @@ PRODUCT_PACKAGES += \
     libvisualizer \
     libvolumelistener
 
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.audiohalext@1.0.vendor
+
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
