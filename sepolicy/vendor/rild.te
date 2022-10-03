@@ -5,3 +5,4 @@ allow rild default_prop:file { open read write };
 allow rild vendor_default_prop:property_service set;
 
 set_prop(rild, vendor_deviceid_prop)
+set_prop(rild, vendor_sno_prop)
