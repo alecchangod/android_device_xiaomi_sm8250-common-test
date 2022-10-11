@@ -93,6 +93,9 @@ ifeq ($(TARGET_HAS_FM),true)
 BOARD_HAVE_QCOM_FM := true
 endif
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Init
 TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_kona
 TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_kona
