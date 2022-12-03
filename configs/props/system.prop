@@ -69,9 +69,6 @@ ro.lmk.kill_timeout_ms=15
 # Notch Overlay
 ro.miui.notch=1
 
-# Media
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-
 # ParanoidDoze
 ro.sensor.pickup=xiaomi.sensor.pickup
 ro.sensor.proximity=true
