@@ -390,7 +390,11 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr
+ # Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-qti \
+    android.hardware.power.stats@1.0-service.mock \
+    vendor.qti.hardware.perf@1.0.vendor
 
 ifeq (kona,$(TARGET_BOARD_PLATFORM))
 PRODUCT_COPY_FILES += \
