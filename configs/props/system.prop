@@ -7,6 +7,10 @@ log.tag.CHIUSECASE=ERROR
 # Charger
 ro.charger.disable_init_blank=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+ro.sys.fw.dex2oat_thread_count=8
+
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
 
