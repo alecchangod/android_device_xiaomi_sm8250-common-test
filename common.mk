@@ -268,7 +268,10 @@ PRODUCT_PACKAGES += \
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss@2.1.vendor \
+    liblocdiagiface \
+    libloc_net_iface \
+    libloc_net_iface.vendor
 
 # Health
 PRODUCT_PACKAGES += \
