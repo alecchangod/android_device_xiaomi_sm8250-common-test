@@ -38,7 +38,7 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 
 # Crypto
 ro.crypto.allow_encrypt_override=true

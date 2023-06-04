@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 endif
+
+# ANT+
+PRODUCT_PACKAGES += \
+    com.dsi.ant@1.0.vendor
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -416,7 +420,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-impl-xiaomi \
     android.hardware.sensors@1.0-service
 
 PRODUCT_PACKAGES += \
