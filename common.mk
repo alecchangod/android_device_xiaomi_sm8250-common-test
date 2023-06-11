@@ -370,8 +370,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
 
+ifeq ($(TARGET_IS_VAB),true)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint_$(TARGET_BOOTLOADER_BOARD_NAME).json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/configs/powerhint_kona.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+else
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint_lito.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+endif
+
 
 # Public libraries
 PRODUCT_COPY_FILES += \
