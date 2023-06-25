@@ -219,6 +219,9 @@ persist.vendor.qfp=false
 # Gatekeeper
 vendor.gatekeeper.disable_spu=true
 
+# GFX
+ro.config.avoid_gfx_accel=true
+
 # Graphics
 debug.egl.hw=0
 debug.mdpcomp.logs=0
