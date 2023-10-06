@@ -129,7 +129,6 @@ ifeq (kona,$(TARGET_BOOTLOADER_BOARD_NAME))
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
 TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig vendor/xiaomi/sm8250-common.config
 else
-TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-latest
 TARGET_KERNEL_CLANG_VERSION := latest
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
