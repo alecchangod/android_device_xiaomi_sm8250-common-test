@@ -475,6 +475,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl-xiaomi \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-service
 
 PRODUCT_PACKAGES += \
