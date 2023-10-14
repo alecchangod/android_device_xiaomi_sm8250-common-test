@@ -109,9 +109,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    audio.primary.kona \
+    audio.primary.$(TARGET_BOARD_PLATFORM) \
     audio.r_submix.default \
-    audio.usbv2.default \
+    audio.usbv2.default
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
@@ -194,7 +194,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    memtrack.kona
+    memtrack.$(TARGET_BOARD_PLATFORM)
 
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
@@ -387,7 +387,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
 
-ifeq ($(TARGET_IS_VAB),true)
+ifeq (kona,$(TARGET_BOARD_PLATFORM))
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint_kona.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 else
@@ -511,7 +511,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 
-ifeq ($(TARGET_IS_VAB),true)
+ifeq (kona,$(TARGET_BOARD_PLATFORM))
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg_kona.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 else
