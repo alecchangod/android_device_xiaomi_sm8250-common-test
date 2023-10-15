@@ -476,8 +476,11 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
 # Touch
+SUPPORT_HIGHTOUCHPOLLINGRATE ?= true
+ifeq (true,$(SUPPORT_HIGHTOUCHPOLLINGRATE))
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.xiaomi
+endif
 
 # USB
 PRODUCT_PACKAGES += \
