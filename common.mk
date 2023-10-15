@@ -388,13 +388,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
 
-ifeq (kona,$(TARGET_BOARD_PLATFORM))
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint_kona.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-else
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint_lito.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-endif
+    $(LOCAL_PATH)/configs/powerhint_$(TARGET_BOARD_PLATFORM).json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 
 # Public libraries
@@ -515,14 +510,8 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 
-ifeq (kona,$(TARGET_BOARD_PLATFORM))
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg_kona.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-else
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg_lito.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-endif
-
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg_$(TARGET_BOARD_PLATFORM).ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
