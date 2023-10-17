@@ -392,6 +392,7 @@ PRODUCT_PACKAGES += \
 
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
+    adreno \
     bt \
     gps \
     media \
