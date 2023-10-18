@@ -34,12 +34,6 @@ persist.vendor.color.matrix=2
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=20
 
-# CNE
-persist.vendor.cne.feature=1
-
-# DPM
-persist.vendor.dpm.feature=1
-
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
