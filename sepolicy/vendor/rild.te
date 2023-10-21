@@ -1,1 +1,7 @@
+# Allow rild to read and write to default_prop file
+allow rild default_prop:file { read write };
+
+# Allow rild to set vendor_default_prop property
+allow rild vendor_default_prop:property_service set;
+
 set_prop(rild, vendor_deviceid_prop)
