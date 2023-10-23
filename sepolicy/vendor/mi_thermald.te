@@ -31,4 +31,4 @@ allow mi_thermald {
 set_prop(mi_thermald, vendor_thermal_normal_prop)
 
 # Allow mi_thermald to read from sysfs directory
-allow mi_thermald sysfs:dir read;
+allow mi_thermald sysfs:dir { open read };
