@@ -198,6 +198,9 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     memtrack.$(TARGET_BOARD_PLATFORM)
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.memtrack = $(TARGET_BOARD_PLATFORM)
+
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
