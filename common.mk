@@ -110,7 +110,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    audio.primary.$(TARGET_BOARD_PLATFORM) \
+    audio.primary.kona \
     audio.r_submix.default \
     audio.usbv2.default
 
