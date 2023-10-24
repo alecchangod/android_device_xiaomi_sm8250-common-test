@@ -5,6 +5,10 @@
 # Bluetooth
 /vendor/bin/init\.mi\.btmac\.sh                                         u:object_r:vendor_qti_init_shell_exec:s0
 
+# blkio
+/dev/blkio(/.*)?                                                                                           u:object_r:blkio_dev:s0
+/dev/blkio/background(/.*)?                                                                                u:object_r:blkio_dev:s0
+
 # Boot devices
 /dev/block/platform/soc/1d84000.ufshc/by-name/vendor_boot_[ab]          u:object_r:boot_block_device:s0
 

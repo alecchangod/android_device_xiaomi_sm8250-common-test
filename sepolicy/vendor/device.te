@@ -1,3 +1,6 @@
+
+type blkio_dev, dev_type;
+
 type fingerprint_device, dev_type;
 
 type hall_device, dev_type;

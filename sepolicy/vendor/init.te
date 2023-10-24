@@ -1,3 +1,5 @@
+allow init blkio_dev:file { create open read write };
+
 # For mount tracefs tracefs /sys/kernel/tracing
 allow init debugfs_tracing_debug:dir mounton;
 
