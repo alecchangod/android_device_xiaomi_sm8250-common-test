@@ -1,11 +1,13 @@
-allow init blkio_dev:file { create open read write };
 
 # For mount tracefs tracefs /sys/kernel/tracing
 allow init debugfs_tracing_debug:dir mounton;
 
 allow init same_process_hal_file:file execute;
 
-allow init stune_device:{
+allow init {
+  stune_device
+  blkio_dev
+  }:{
   file
   dir
   chr_file
@@ -19,3 +21,7 @@ allow init proc_last_kmsg:file {
 allow init adsprpcd_file:file mounton;
 
 allow init proc:file write;
+
+allow init sysfs_device:file { read open } ;
+allow init userdata_device:file { write getattr open } ;
+allow init config_device:file { write getattr open } ;
