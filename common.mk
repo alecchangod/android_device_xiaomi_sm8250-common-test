@@ -512,8 +512,7 @@ endif
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti \
-    android.hardware.usb.gadget@1.0-service
+    android.hardware.usb@1.3-service-qti
 
 PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
