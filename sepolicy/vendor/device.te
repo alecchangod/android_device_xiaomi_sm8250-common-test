@@ -1,6 +1,8 @@
 
 type blkio_dev, dev_type;
 
+type config_device, dev_type;
+
 type fingerprint_device, dev_type;
 
 type hall_device, dev_type;
@@ -12,3 +14,7 @@ type motor_device, dev_type;
 type sound_device, dev_type;
 
 type stune_device, dev_type;
+
+type sysfs_device, dev_type;
+
+type userdata_device, dev_type;
