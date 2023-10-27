@@ -95,41 +95,42 @@ TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_kona
 TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_kona
 
 # Kernel
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+
 ifeq ($(TARGET_IS_VAB),true)
 BOARD_BOOT_HEADER_VERSION := 3
 else
 BOARD_BOOT_HEADER_VERSION := 2
 endif
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm
-BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
-BOARD_KERNEL_CMDLINE += kpti=off
-BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=qcom
-BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+
+BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
+BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=qcom
+BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
+BOARD_KERNEL_CMDLINE += androidboot.memcg=1
+BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
+BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem,nosocket
+BOARD_KERNEL_CMDLINE += kpti=off
+BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
+BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
+BOARD_KERNEL_CMDLINE += reboot=panic_warm
+BOARD_KERNEL_CMDLINE += service_locator.enable=1
+BOARD_KERNEL_CMDLINE += swiotlb=2048 loop.max_part=7
+
 ifeq (kona,$(TARGET_BOOTLOADER_BOARD_NAME))
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
 TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig vendor/xiaomi/sm8250-common.config
 else
-TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument -Wno-address-of-packed-member" LLVM_IAS=1
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
-ifeq (monet,$(PRODUCT_DEVICE))
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
-KERNEL_SUPPORTS_LLVM_TOOLS := true
-TARGET_KERNEL_LLVM_BINUTILS := true
-TARGET_KERNEL_CLANG_VERSION := latest
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-latest
-else
-TARGET_KERNEL_LLVM_BINUTILS := false
-TARGET_KERNEL_CLANG_VERSION := vangogh
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-vangogh
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-TARGET_KERNEL_SOURCE := kernel/xiaomi/vangogh
-endif
+TARGET_KERNEL_CLANG_VERSION := latest
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
+TARGET_KERNEL_LLVM_BINUTILS := true
 endif
 
 # Partitions
