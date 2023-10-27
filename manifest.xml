@@ -27,19 +27,9 @@
         <fqname>@2.2::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.bluetooth.a2dp</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IBluetoothAudioOffload/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.camera.provider</name>
         <transport arch="32+64">passthrough</transport>
         <fqname>@2.4::ICameraProvider/legacy/0</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.configstore</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.drm</name>
@@ -110,7 +100,6 @@
         <name>android.hardware.thermal</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IThermal/default</fqname>
-        <fqname>@1.1::IThermal/default</fqname>
         <fqname>@2.0::IThermal/default</fqname>
     </hal>
     <hal format="hidl">
