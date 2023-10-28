@@ -1,0 +1,3 @@
+
+# Allow cameraserver to read vendor files
+allow cameraserver vendor_file:file read;
