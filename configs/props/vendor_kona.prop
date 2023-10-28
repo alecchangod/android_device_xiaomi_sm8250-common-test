@@ -1,13 +1,3 @@
-# Audio
-persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
-ro.vendor.audio.scenario.support=true
-ro.vendor.audio.sfx.scenario=true
-ro.vendor.audio.surround.support=true
-ro.vendor.audio.vocal.support=true
-ro.vendor.audio.voice.change.youme.support=true
-vendor.audio.usb.disable.sidetone=true
-vendor.audio_hal.period_multiplier=2
-
 # Bluetooth
 persist.vendor.qcom.bluetooth.soc=hastings
 vendor.qcom.bluetooth.soc=hastings

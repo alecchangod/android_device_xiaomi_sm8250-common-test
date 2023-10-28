@@ -1,9 +1,6 @@
 # Audio
-persist.vendor.audio.hifi=false
 ro.vendor.audio.voice.volume.boost=manual
 ro.vendor.audio.hifi=false
-vendor.audio.mic.status=off
-vendor.audio_hal.period_multiplier=3
 
 # Bluetooth
 persist.vendor.qcom.bluetooth.soc=cherokee
