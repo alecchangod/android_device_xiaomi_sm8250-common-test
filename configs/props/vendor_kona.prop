@@ -3,6 +3,7 @@ persist.vendor.qcom.bluetooth.soc=hastings
 vendor.qcom.bluetooth.soc=hastings
 
 # Chipset
+ro.vendor.qti.soc_name=kona
 ro.soc.model=SM8250
 
 # Volume steps

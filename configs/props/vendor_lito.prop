@@ -6,6 +6,7 @@ persist.vendor.qcom.bluetooth.soc=cherokee
 vendor.qcom.bluetooth.soc=cherokee
 
 # Chipset
+ro.vendor.qti.soc_name=lito
 ro.soc.model=SM7250
 
 # Volume steps
