@@ -26,8 +26,5 @@ allow init sysfs_device:file { read open } ;
 allow init userdata_device:file { write getattr open } ;
 allow init config_device:file { write getattr open } ;
 
-# Allow init to write synthetic_events
-allow init tracing:file { write setattr };
-
 # Allow init to use sys_nice capability
 allow init self:capability sys_nice;
