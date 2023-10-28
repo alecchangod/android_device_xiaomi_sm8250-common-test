@@ -480,11 +480,14 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qti.dcvs.sh
 
-PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += 
+    init.batterysecret.rc \
     init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
+    init.mi_thermald.rc \
+    init.qti.qcv.rc \
     init.xiaomi.rc \
     ueventd.qcom.rc
 
