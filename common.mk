@@ -480,7 +480,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qti.dcvs.sh
 
-PRODUCT_PACKAGES += 
+PRODUCT_PACKAGES += \
     init.batterysecret.rc \
     init.qcom.power.rc \
     init.qcom.rc \
