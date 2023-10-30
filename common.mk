@@ -436,8 +436,13 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
+# QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
-    perf
+    bt \
+    gps \
+    perf \
+    usb \
+    vibrator
 
 # RIL
 PRODUCT_PACKAGES += \
