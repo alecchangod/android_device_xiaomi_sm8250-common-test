@@ -440,6 +440,7 @@ PRODUCT_PACKAGES += \
 TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     gps \
+    qseecomd \
     perf \
     usb \
     vibrator
