@@ -451,13 +451,6 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-im
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
-# Touch
-SUPPORT_HIGHTOUCHPOLLINGRATE ?= true
-ifeq (true,$(SUPPORT_HIGHTOUCHPOLLINGRATE))
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi
-endif
-
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
