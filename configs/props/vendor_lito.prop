@@ -1,5 +1,6 @@
 # Audio
 ro.vendor.audio.voice.volume.boost=manual
+ro.vendor.audio.hifi=false
 
 # Bluetooth
 persist.vendor.qcom.bluetooth.soc=cherokee
