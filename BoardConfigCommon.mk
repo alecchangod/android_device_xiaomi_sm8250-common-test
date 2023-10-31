@@ -231,9 +231,6 @@ VENDOR_SECURITY_PATCH := 2023-06-01
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-ifeq ($(TARGET_BOARD_PLATFORM),kona)
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor_kona
-endif
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BOARD_SEPOLICY_M4DEFS += \
     sysfs_battery_supply=vendor_sysfs_battery_supply
