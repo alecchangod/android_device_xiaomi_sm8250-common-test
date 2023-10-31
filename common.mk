@@ -295,9 +295,6 @@ TARGET_NFC_SKU := $(PRODUCT_DEVICE)
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.se.omapi.ese.xml
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
