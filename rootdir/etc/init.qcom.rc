@@ -79,6 +79,11 @@ on init
     # Allow both charger and hal_light to access panel0 backlight
     chown system system /sys/class/backlight/panel0-backlight/brightness
 
+on late-init
+    # Setup synthetic events
+    chmod 0666 /sys/kernel/tracing/synthetic_events
+    chmod 0666 /sys/kernel/debug/tracing/synthetic_events
+
 on post-fs
     mkdir /mnt/vendor/dsp 0770 root root
     copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
