@@ -38,15 +38,18 @@ on early-init
     mount tracefs tracefs /sys/kernel/tracing
     chmod 0755 /sys/kernel/tracing
 
-  # Change ownership of hw_recovery related nodes
+    # Change ownership of hw_recovery related nodes
     chown system graphics /sys/kernel/debug/dri/0/debug/dump
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_reg
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_dbgbus
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_vbif_dbgbus
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_dsi_dbgbus
 
-  # Change ownership of sysfs power control node
+    # Change ownership of sysfs power control node
     chown system graphics /sys/class/drm/card0/device/power/control
+
+    # Mount cgroup mount point for cpu accounting
+    mount cgroup none /acct cpuacct
 
     # Change ownership of sw_sync node
     chown system graphics /sys/kernel/debug/sync/sw_sync
@@ -75,9 +78,6 @@ on init
 
     # Allow both charger and hal_light to access panel0 backlight
     chown system system /sys/class/backlight/panel0-backlight/brightness
-
-    # Mount cgroup mount point for cpu accounting
-    mount cgroup none /acct cpuacct
 
 on post-fs
     mkdir /mnt/vendor/dsp 0770 root root
