@@ -59,14 +59,6 @@
         <fqname>@1.0::IOmxStore/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.power.stats</name>
-        <transport>hwbinder</transport>
-        <interface>
-            <name>IPowerStats</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ISap/slot1</fqname>
@@ -103,11 +95,6 @@
         <name>android.hardware.tetheroffload.control</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IOffloadControl/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.thermal</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::IThermal/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.dsi.ant</name>
