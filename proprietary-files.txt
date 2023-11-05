@@ -142,12 +142,6 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.latency@2.1.so
 
-# Charger - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
-vendor/bin/hvdcp_opti
-vendor/bin/init.qti.chg_policy.sh
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
-vendor/etc/charger_fstab.qti
-
 # Config Store - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/configstore/wigig.xml

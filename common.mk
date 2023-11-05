@@ -85,10 +85,6 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 endif
 
-# ANT+
-PRODUCT_PACKAGES += \
-    com.dsi.ant@1.0.vendor
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl \
@@ -256,16 +252,6 @@ endif
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
-
-ifneq ($(TARGET_IS_VAB),true)
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl.recovery
-endif
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -376,6 +362,7 @@ PRODUCT_PACKAGES += \
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
+    charging \
     gps \
     media \
     nfc \
