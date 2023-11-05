@@ -31,13 +31,16 @@ vendor/lib64/libmdsprpc.so|f9c68f67cbd89178ea5bc042e5b62e45f63acc90
 vendor/lib64/libsdsprpc.so|a78aea850416e674872747e9ca6da1dc88f12958
 vendor/lib64/libsysmon_cdsp_skel.so|3ae87b24980f983ba83fd563134328bb0f6f62e8
 
-# DSP service - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# DSP service - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 
-# Bluetooth - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Bluetooth - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+
+- from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
@@ -73,7 +76,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 # Camera (postproc) - from LA.UM.9.14.r1-18400.02-LAHAINA.QSSI12.0
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|afeca01f1fc2619ddf1aada01d42735ab9efa682
 
-# CNE - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# CNE - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/app/CACertService/CACertService.apk
 vendor/app/CneApp/CneApp.apk
 vendor/app/IWlanService/IWlanService.apk
@@ -139,27 +142,27 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.latency@2.1.so
 
-# Charger - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Charger - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
 
-# Config Store - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Config Store - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
-vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/configstore/wigig.xml
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Connection Security - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Connection Security - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
+vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk
 vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
 vendor/lib64/libminksocket.so
 
-# CVP - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# CVP - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/lib/rfsa/adsp/libcvpdsp_skel.so
 vendor/lib64/libcvp2.so
 vendor/lib64/libcvp2_hfi.so
@@ -167,13 +170,13 @@ vendor/lib64/libcvp_common.so
 vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
-# DPM - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# DPM - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# Data - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Data - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/embmsslServer
@@ -209,11 +212,11 @@ vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
-# Diag - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Diag - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/lib/libdiag.so
 vendor/lib64/libdiag.so
 
-# Display - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Display - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/feature_enabler_client
 vendor/bin/ppd
@@ -242,7 +245,7 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# FASTCV - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# FASTCV - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
@@ -252,7 +255,7 @@ vendor/lib/libfastcvdsp_stub.so
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
-# GPS - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# GPS - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/garden_app
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
@@ -284,6 +287,7 @@ vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so
 vendor/lib64/liblbs_core.so
 vendor/lib64/libloc_api_v02.so
+vendor/lib64/libloc_api_wds.so
 vendor/lib64/libloc_socket.so
 vendor/lib64/liblocationservice.so
 vendor/lib64/liblocationservice_glue.so
@@ -305,7 +309,7 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
-# IMS - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# IMS - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
@@ -350,13 +354,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
-# MDM - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
-vendor/bin/ks
-vendor/bin/mdm_helper
-vendor/bin/mdm_helper_proxy
-vendor/lib64/libmdmimgload.so
-
-# MMI - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# MMI - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
 vendor/bin/mmid
 vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
@@ -365,11 +363,11 @@ vendor/etc/permissions/vendor.qti.hardware.factory.xml
 vendor/lib64/vendor.qti.hardware.factory@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.1.so
 
-# MM OSAL - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# MM OSAL - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
-# NPU - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# NPU - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/npu_launcher
 vendor/lib/libhta_hexagon_runtime.so
 vendor/lib/libnpu.so
@@ -378,11 +376,11 @@ vendor/lib64/libhta_hexagon_runtime.so
 vendor/lib64/libnpu.so
 vendor/lib64/unnhal-acc-hta.so
 
-# OpenVX - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# OpenVX - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/lib/libopenvx.so
 vendor/lib64/libopenvx.so
 
-# Neural Networks - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Neural Networks - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
@@ -393,35 +391,39 @@ vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# PD - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# PD - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/pd-mapper
-vendor/lib/libpdmapper.so
-vendor/lib/libpdnotifier.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 
-# Peripheral Manager - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Peripheral Manager - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
-# Public Libraries - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Public Libraries - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/etc/public.libraries.txt
 
-# QCC VND HAL - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# QCC VND HAL - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
 vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 
-# QDMA - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# QCV - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
+vendor/bin/init.qti.qcv.sh
+vendor/etc/init/init.qti.qcv.rc
+vendor/lib64/libsoc_helper.so
+vendor/lib64/libsoc_helper_jni.so
+
+# QDMA - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/app/QCC-TR-UI/QCC-TR-UI.apk
 vendor/bin/qcc-trd
 vendor/etc/init/init.qdmastats.rc
 vendor/lib64/libqdma_file_agent.so
 
-# QMI - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# QMI - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/irsc_util
 vendor/bin/qmipriod
 vendor/bin/qrtr-cfg
@@ -430,6 +432,7 @@ vendor/bin/qrtr-ns
 vendor/etc/init/qmipriod.debug.rc
 vendor/etc/init/qmipriod.rc
 vendor/etc/seccomp_policy/qti-systemd.policy
+vendor/etc/qmi_fw.conf
 vendor/lib/libidl.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libqcci_legacy.so
@@ -461,7 +464,7 @@ vendor/lib64/libqsocket.so
 vendor/lib64/libsmemlog.so
 vendor/lib64/libsystem_health_mon.so
 
-# QCRIL - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# QCRIL - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/qcrild
 vendor/bin/qtigetprop
 vendor/bin/qtisetprop
@@ -524,15 +527,10 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/11_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
 
-# QCV - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
-vendor/lib/libsoc_helper.so
-vendor/lib/libsoc_helper_jni.so
-vendor/lib64/libsoc_helper.so
-vendor/lib64/libsoc_helper_jni.so
-
-# QTEE - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# QTEE - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
@@ -542,7 +540,7 @@ vendor/lib64/libQTEEConnector_listener.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# QSEECOM - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# QSEECOM - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
 vendor/etc/init/qseecomd.rc
@@ -558,18 +556,20 @@ vendor/lib64/librpmb.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
-# QSPM HAL - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# QSPM HAL - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
 vendor/etc/seccomp_policy/qspm.policy
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
-# RemoteFS - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# RemoteFS - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/rmt_storage
 vendor/etc/init/vendor.qti.rmt_storage.rc
 
-# SCVE - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# SCVE - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/libscveCommon.so
 vendor/lib/libscveCommon_stub.so
 vendor/lib/libscveObjectSegmentation.so
@@ -587,14 +587,14 @@ vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
-# SMC Invoke - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# SMC Invoke - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libnative-api.so
 vendor/lib64/libqcbor.so
 
-# SecureMSM (GPQESE) - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# SecureMSM (GPQESE) - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
@@ -604,7 +604,7 @@ vendor/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
-# SecureMSM (SECDISP) - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# SecureMSM (SECDISP) - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/libSecureUILib.so
@@ -615,7 +615,7 @@ vendor/lib64/libsi.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# SecureMSM - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# SecureMSM - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
 vendor/lib64/libbase64.so
@@ -632,45 +632,46 @@ vendor/lib64/libspl.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libtzdrmgenprov.so
 
-# Soter - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Soter - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/vendor.qti.hardware.soter@1.0-provision
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# SS Restart - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# SS Restart - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/ssr_diag
 vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 vendor/lib/libsubsystem_control.so
 vendor/lib64/libsubsystem_control.so
 
-# TFTP - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# TFTP - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/tftp_server
 vendor/etc/init/vendor.qti.tftp.rc
 
-# TLOC - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# TLOC - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/tloc_daemon
 vendor/etc/init/tloc_daemon.rc
 
-# Thermal (limits-hal) - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Thermal (limits-hal) - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.limits@1.0-service
 vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
 vendor/lib64/vendor.qti.hardware.limits@1.0.so
 
-# Time - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Time - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
-# UBWC - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# UBWC - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/lib/libstreamparser.so
 
-# VPP - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# VPP - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/vppservice
+vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vppservice.rc
 vendor/lib/libOmxVpp.so
 vendor/lib/libvppclient.so
@@ -679,9 +680,6 @@ vendor/lib/libvpphvx.so
 vendor/lib/libvppimmotion.so
 vendor/lib/libvpplibrary.so
 vendor/lib/libvpptestutils.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vendor.qti.hardware.vpp@1.2.so
-vendor/lib/vendor.qti.hardware.vpp@1.3.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
@@ -689,11 +687,8 @@ vendor/lib64/libvpphvx.so
 vendor/lib64/libvppimmotion.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/libvpptestutils.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 
-# WiFi Display - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# WiFi Display - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
@@ -733,6 +728,7 @@ vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 # ADSPRPC - MIUI
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libssc_default_listener.so
+vendor/lib64/libssc_default_listener.so
 
 # ADSP modules (aptX)
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
@@ -753,10 +749,21 @@ vendor/etc/audio_configs.xml|eb74ffb11b3b5190bb8070f84de0798ed53ebc87
 vendor/etc/audio_configs_stock.xml|0bd072df25ff1641701bf9fa066bdfefd3b52565
 vendor/etc/audio_effects.conf|49e00ca08a1cc3688d2f88bbf67fae5a5ebeabb4
 vendor/etc/audio_io_policy.conf|2b38e2a34de25c2da90cba29851da3b33b42327a
+vendor/etc/audio_platform_info.xml|cbbe1bc50e43aa18f67a726a773c9f32549da609
 vendor/etc/audio_platform_info_intcodec.xml|e92ca8f1da14867d9e8711067713a0fd4559f111
+vendor/etc/audio_platform_info_qrd.xml|22fedc76c434063c1b905055b187a75c37ec7933
+vendor/etc/audio_policy_engine_configuration.xml|ef0cdc9ac80ab1a14c279e3f73f8a2090f360bda
+vendor/etc/audio_policy_engine_default_stream_volumes.xml|490d76f7eb26f7594611efc8d14515caa29feaaf
+vendor/etc/audio_policy_engine_product_strategies_mi.xml:vendor/etc/audio_policy_engine_product_strategies.xml|efced22194f14006cd26092655e868ec5c4d171c
+vendor/etc/audio_policy_engine_stream_volumes_mi.xml:vendor/etc/audio_policy_engine_stream_volumes.xml|369f1f41fbb954ef70b38bd459e94030c9f748a4
 vendor/etc/audio_policy_volumes.xml|b6c0faeb54ac8f02c7b2f0cf6e3e4740d21e5386
+vendor/etc/audio_tuning_mixer.txt|e6bfc9499e2ac82acfda8cb932949f3035dc8f5a
+vendor/etc/cirrus.cfg
+vendor/etc/cs35l41_cal.wav|fd5ed0fb4c9bb0196dca71f9b4aa00e5d166d56e
 vendor/etc/mixer_paths.xml|dbbace1809b0a9e3e0e97a2e9f077101af756196
+vendor/etc/mixer_paths_cdp.xml|3d9f347c3ccf1013ba153bf9577aa52499ec0738
 vendor/etc/mixer_paths_overlay_dynamic.xml|893f2ccd59194fc6e57ed47ad26e74b1ddf2d574
+vendor/etc/mixer_paths_overlay_static.xml|f843c1c0ebfd941c507d9fdd68c7c776a37cf443
 vendor/etc/sound_trigger_mixer_paths.xml|c674e5b33fc4c444c31da43344a88c82dd590e15
 vendor/etc/sound_trigger_platform_info.xml|759023d5690a3e1bc58bd929ef1db017074be437
 
@@ -830,6 +837,7 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
+vendor/lib64/libwvkeybox.so|3bef9e673bae906848e39e752c972d5f7be4317a
 
 # Fingerprint - MIUI
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|d9ac899dc4bbd2ba28ae628772c4b4005dd3b329
@@ -915,7 +923,7 @@ vendor/etc/gps.conf
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 
-# Keymaster - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# Keymaster - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
@@ -943,7 +951,14 @@ vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
+vendor/lib/libmmhardware.so|b5aad1519c0735a5c643ecf3685ef8368f68b700
 vendor/lib/libsmwrapper.so
+
+# MDM - MIUI
+vendor/bin/ks|45109ee2897c57c0fe133d4df1d8a02e037c594a
+vendor/bin/mdm_helper|e39394671d31704fcfca6a7b1438d4f5dd5aee65
+vendor/bin/mdm_helper_proxy|8f83cd1bd5ba6d0ebaac67aef1921dbdd94bc613
+vendor/lib64/libmdmimgload.so|8a9577fa4f74a1fff22c25b592b4598f4de5a243
 
 # Media (Codec2) - from LA.UM.9.12.r1-14000.04-SMxx50.QSSI12.0
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy|3c396a276dfb589501105e7158459fa2d644607e
@@ -1056,6 +1071,7 @@ vendor/bin/mi_thermald
 vendor/bin/thermal-engine
 vendor/etc/init/init.mi_thermald.rc
 vendor/etc/init/init_thermal-engine.rc
+vendor/etc/perf/thermalboost.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-class0.conf
 vendor/etc/thermal-engine.conf
@@ -1064,6 +1080,11 @@ vendor/etc/thermal-mgame.conf
 vendor/etc/thermal-navigation.conf
 vendor/etc/thermal-nolimits.conf
 vendor/etc/thermal-normal.conf
+vendor/etc/thermal-per-camera.conf|65d8cb243cac4285a10487d4b43e97914a4f82f9
+vendor/etc/thermal-per-class0.conf|a2dd89fdf829ac9cdd96ed88f1763413b6c54302
+vendor/etc/thermal-per-navigation.conf|4192fbf640a076b1abdb7259158fd99b740a3517
+vendor/etc/thermal-per-normal.conf|58e79c5c1a8e65c5e0a8d6bbe83a941ef5610638
+vendor/etc/thermal-per-video.conf|fb327fd5680fe2cb6fa1c7d2ec3bb82460226428
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
