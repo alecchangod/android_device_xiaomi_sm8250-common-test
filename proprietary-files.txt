@@ -35,10 +35,7 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 # Bluetooth - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-
-- from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
@@ -787,40 +784,6 @@ vendor/framework/com.fingerprints.extension.jar|190f8631c968017120110b8765091f7a
 vendor/lib64/hw/fingerprint.fpc.so|703f2b4b26e57637a33df0e8b270587180d96ed0
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so|8610a0f066ae154ab8bcc6e636585b7db2293e72
 
-# Graphics (Adreno)
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libVkLayer_q3dtools.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgpudataproducer.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libVkLayer_q3dtools.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-
 # Graphics (Adreno 620 firmware) - from monet
 vendor/firmware/a620_zap.b00|8c20cfff20d7fe9814581b353c1f58d38636e8c5
 vendor/firmware/a620_zap.b01|dc5ca6102706a75811127b22dbd76f6e5782638d
@@ -836,10 +799,6 @@ vendor/firmware/a650_zap.b01
 vendor/firmware/a650_zap.b02
 vendor/firmware/a650_zap.elf
 vendor/firmware/a650_zap.mdt
-
-# Graphics (Vulkan)
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib64/hw/vulkan.adreno.so
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
