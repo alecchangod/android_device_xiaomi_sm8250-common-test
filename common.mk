@@ -396,7 +396,6 @@ PRODUCT_PACKAGES += \
 TARGET_COMMON_QTI_COMPONENTS := \
     media \
     nfc \
-    qseecomd \
     telephony \
     vibrator
 
