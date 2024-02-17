@@ -149,8 +149,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor \
-    libtinycompress
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 PRODUCT_PACKAGES += \
     libbthost_if \
@@ -251,6 +250,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+endif
+
+# FM
+ifeq ($(TARGET_HAS_FM),true)
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
 endif
 
 # Gatekeeper
@@ -384,7 +391,6 @@ PRODUCT_PACKAGES += \
 
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
-    bt \
     media \
     nfc \
     qseecomd \
