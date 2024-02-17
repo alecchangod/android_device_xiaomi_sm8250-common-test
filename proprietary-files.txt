@@ -857,12 +857,6 @@ vendor/bin/mdm_helper|e39394671d31704fcfca6a7b1438d4f5dd5aee65
 vendor/bin/mdm_helper_proxy|8f83cd1bd5ba6d0ebaac67aef1921dbdd94bc613
 vendor/lib64/libmdmimgload.so|8a9577fa4f74a1fff22c25b592b4598f4de5a243
 
-# Media
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
-system_ext/lib64/libmmosal.so
-system_ext/lib64/libmmparser_lite.so
-
 # Media (Codec2) - from LA.UM.9.12.r1-14000.04-SMxx50.QSSI12.0
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy|3c396a276dfb589501105e7158459fa2d644607e
 -vendor/etc/vintf/manifest/c2_manifest_vendor.xml|0e532bf1c7d6a0ee2e7e03a9cc3283a5bffc7f8e

@@ -362,6 +362,7 @@ PRODUCT_PACKAGES += \
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     alarm \
+    av \
     bt \
     charging \
     gps \
