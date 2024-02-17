@@ -374,7 +374,6 @@ PRODUCT_PACKAGES += \
 
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
-    alarm \
     av \
     bt \
     gps \
